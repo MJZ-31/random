@@ -8,7 +8,7 @@ use crate::Source;
 ///    Generators,” CoRR, 2014.
 ///
 /// 2. https://en.wikipedia.org/wiki/Xorshift#xorshift.2B
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub struct Xorshift128Plus(u64, u64);
 
 impl Xorshift128Plus {

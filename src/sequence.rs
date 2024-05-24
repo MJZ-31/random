@@ -3,6 +3,7 @@ use core::marker::PhantomData;
 use crate::{Source, Value};
 
 /// A random sequence.
+#[derive(Debug)]
 pub struct Sequence<'l, S: ?Sized, V>
 where
     S: Source + 'l,
